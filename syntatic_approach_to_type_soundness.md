@@ -40,4 +40,12 @@
 20220112 Wed.  
 (1. ~ before 2-1.)  
   
-1. 
+1. Type Soundness
+- Static type systems : to prevent type error during execution
+  - sound (strongly-typed) if well typped programs cannot cause type error
+- Easy to design sound type system for 'monomorphic' language
+- But, with 'polymorphism' and 'type inference' is delicate
+- Further, the 'incorporation of imperative features (such as references and exceeptions)' more hard
+- Therfore, a formal proof of soundness is required!
+  
+- View:  

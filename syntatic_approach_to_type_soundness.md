@@ -48,4 +48,19 @@
 - Further, the 'incorporation of imperative features (such as references and exceeptions)' more hard
 - Therfore, a formal proof of soundness is required!
   
-- View:  
+- View: static type system = a filter that selects well-typed programs from a larger universe of untyped programs
+  - eval : Programs -> Answers or {Wrong}
+    - defines semantics of untyped programs
+    - |> e : tau
+    - the well-typed programs do not yield Wrong(type error)
+  - Weak Soundness: prevents type errors
+  - Strong Soundness: answer provied by the program (e) has the type tau
+
+- Existing proof for HIndly/Milner-style type system has limitations:
+  - sensitive to formulation of semantics (denotational vs. operational)
+  - hard with two different languages
+  - complicated, lengthy, error-prone
+
+- We present a simple approach to the proof of soundness for HIndley/Milner-sytle polymorphic type systems
+  - based on subject reduction
+  - for demonstrations, developed ...
